@@ -26,6 +26,7 @@ public class ProductController {
 
 		model.addAttribute("product", new Product());
 		model.addAttribute("listProducts",this.productService.listProducts());
+		model.addAttribute("message","Product added successfully");
 		return "product";
 	}
 	@RequestMapping("/getProductById/{pId}")

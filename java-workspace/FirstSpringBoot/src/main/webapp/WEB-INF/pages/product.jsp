@@ -52,6 +52,7 @@ Product price : <form:input path = "price" name = "price"/>
 		</table>
 	</form:form>
 	<br>
+	${message} 
 	<h3>Product List</h3>
 	<c:if test="${!empty listProducts}">
 		<table class="tg">
@@ -76,4 +77,5 @@ Product price : <form:input path = "price" name = "price"/>
 			</c:forEach>
 		</table>
 	</c:if>
+	
 </html>
