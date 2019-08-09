@@ -1,0 +1,7 @@
+0:0:0:0:0:0:0:1 - - [30/Jul/2019:00:32:56 -0700] "GET /JSPtrials/index.html HTTP/1.1" 200 406
+0:0:0:0:0:0:0:1 - - [30/Jul/2019:00:33:04 -0700] "GET /JSPtrials/display.jsp?username=Siva&num1=11&num2=12 HTTP/1.1" 200 177
+127.0.0.1 - - [30/Jul/2019:01:14:29 -0700] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [30/Jul/2019:01:14:29 -0700] "GET /CustomerJSP/displayCust.jsp HTTP/1.1" 500 2897
+0:0:0:0:0:0:0:1 - - [30/Jul/2019:01:14:54 -0700] "GET /CustomerJSP/displayCust.jsp HTTP/1.1" 500 2900
+0:0:0:0:0:0:0:1 - - [30/Jul/2019:01:15:42 -0700] "GET /CustomerJSP/displayCust.jsp HTTP/1.1" 200 264
+0:0:0:0:0:0:0:1 - - [30/Jul/2019:01:16:48 -0700] "GET /CustomerJSP/displayCust.jsp HTTP/1.1" 200 279

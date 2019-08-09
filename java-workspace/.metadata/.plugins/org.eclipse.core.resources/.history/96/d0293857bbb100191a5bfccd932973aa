@@ -1,0 +1,64 @@
+package com;
+//This is a servlet.
+import java.io.IOException;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ * Servlet implementation class Welcome
+ */
+public class Welcome extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+
+	/**
+	 * @see HttpServlet#HttpServlet()
+	 */
+	public Welcome() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	/**
+	 * @see HttpServlet#service(HttpServletRequest request, HttpServletResponse response)
+	 */
+	int counter = 0;
+	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		//String loginUserName = request.getParameter("Username");
+		//String customerId = request.getParameter("CustomerId");
+		//String color[]=request.getParameterValues("color");
+		//counter++;
+		String guestName = request.getParameter("guestName");
+		if(guestName.startsWith("a"))
+		{RequestDispatcher rd = request.getRequestDispatcher("HelloServlet");
+		rd.forward(request, response);
+		response.getWriter().println(guestName);
+		}
+		/*
+		
+		if(color == null) {
+			response.getWriter().println("No color selected");
+
+		}
+		else
+		{
+			for(String c: color)
+			{
+				response.getWriter().println("</br><font color ="+c+">Hello </font>");
+			}
+
+
+		}
+		response.setContentType("text/html");
+		response.getWriter().println("<h1>Hello Welcome - My not so first ever website");
+		response.getWriter().println("<h1>You are visitor number "+counter);
+		response.getWriter().println("<a href = 'Hello.html'>Click here to be Helloed</a>"+loginUserName); 
+		response.getWriter().println("Your customer Id is "+customerId);*/
+
+	}
+
+}

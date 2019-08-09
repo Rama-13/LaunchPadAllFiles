@@ -1,0 +1,13 @@
+<html>
+<head>
+<h1> Please submit your details</h1>
+<body>
+<form action = "https://www.bing.com">
+Username </br>
+<input type = "text" name = "Username" value = "kodandarama"><br>
+Password: <br>
+<input type = "text" name = "Username" value = "password"><br>
+
+
+</head>
+</html>

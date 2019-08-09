@@ -1,0 +1,26 @@
+package com.deloitte.cms.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+import com.deloitte.cms.dao.CustomerDAO;
+import com.deloitte.cms.dao.impl.CustomerDAOImpl;
+import com.deloitte.cms.model.Customer;
+@Controller
+public class CustomerController {
+	@Autowired
+	CustomerDAO customerDAO;
+	@RequestMapping("/addcustomer")
+	public ModelAndView addcustomer(Customer customer)
+{
+		 = new CustomerDAOImpl();
+		customerDAO.insertCustomer(customer);
+		
+		return new ModelAndView("success","a",customer);
+		
+		
+		}
+	
+}

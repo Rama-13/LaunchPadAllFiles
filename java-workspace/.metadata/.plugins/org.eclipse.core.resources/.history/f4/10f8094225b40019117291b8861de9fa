@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+	xmlns:p="http://www.springframework.org/schema/p"
+
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+
+
+	<bean id="cust" class="com.deloitte.cms.model.Customer" autowire = "constructor" scope = "prototype" init-method="doWork" destroy-method="LastMethod">
+		<property name="customerId" value="101"></property>
+		<property name="customerName" value="Rama"></property>
+		<property name="customerAddress" value="Eluru"></property>
+		<property name="billAmount" value="10"></property>
+	</bean>
+	
+	<bean id = "address" class = "com.deloitte.cms.model.Address">
+	<property name = "city" value = "Eluru"></property>
+	<property name = "state" value = "Andhra Pradesh"></property>
+	</bean>
+
+</beans>

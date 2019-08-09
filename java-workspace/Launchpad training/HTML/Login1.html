@@ -1,0 +1,49 @@
+<html>
+
+<body>
+
+<script>
+
+    function validate()
+
+    {
+
+var userna = document.getElementById("username");
+
+var passworda = document.getElementById("password");
+
+if (userna.value == "kodandarama" && passworda.value == "kodandarama")
+
+{
+    alert("You are logged in :" +userna);
+}
+
+else {
+
+    document.getElementById("ErrorUsername").innerHTML = "invalid username";
+
+
+}
+}
+
+</script>
+
+<h1 align = "center"> Login</h1>
+
+<body bgcolor = "#CF7F5E" text = "black">
+
+<form align = "center">
+
+<table> <tr><td>Username</td>
+
+<td><input type = "text" id = "username" name = "Username" ></td></tr><br>
+<span id = "ErrorUsername"> rama </span></table><br>
+<tr><td></td><td>Password</td>
+
+<td><input type = "password" id = "password" name = "password" ></td></tr><br><br>
+
+<tr><td></td><td><input type = "submit" value ="Sign in" onclick = "validate();"></td></tr>
+
+</body>
+
+</html>

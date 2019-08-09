@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Hello</title>
+<h1>How many times do you want me to say Hello?</h1>
+<form>
+<input type = "checkbox" value = "Red" name = "color">Red
+</form>
+</head>
+<body>
+
+</body>
+</html>

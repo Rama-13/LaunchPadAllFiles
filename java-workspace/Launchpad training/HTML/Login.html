@@ -1,0 +1,29 @@
+<html>
+<head>
+<script>
+    function validate()
+    {
+var userna = document.getElementById("username").value;
+var passworda = document.getElementById("password").value;
+if(userna.length == 0 || passworda.length == 0)
+{
+    alert("Please enter the name and password both to proceed")
+}
+else
+{
+    alert("Most welcome:" +userna);
+}
+
+    }
+    </script>
+<h1 align = "center"> Please submit your details</h1>
+<body bgcolor = "black" text = "silver">
+<form action = "https://www.bing.com" align = "center">
+Username </br>
+<input type = "text" id = "username" name = "Username" ><br>
+Password: <br>
+<input type = "password" id = "password" name = "password" ><br>
+<input type = "submit" value = "submit">
+<input type = "button" value ="Go" onclick = "validate()">
+</head>
+</html>

@@ -1,0 +1,40 @@
+package com.deloitte.cms.model;
+
+public class Address {
+	private String city;
+	private int aId;
+	private String state;
+	public String getCity() {
+		return city;
+	}
+	public Address()
+	{}
+	
+	public void setCity(String city) {
+		this.city = city;
+	}
+	public int getaId() {
+		return aId;
+	}
+	public void setaId(int aId) {
+		this.aId = aId;
+	}
+	public String getState() {
+		return state;
+	}
+	public void setState(String state) {
+		this.state = state;
+	}
+	public Address(String city, int aId, String state) {
+		super();
+		this.city = city;
+		this.aId = aId;
+		this.state = state;
+	}
+	@Override
+	public String toString() {
+		return "Address [city=" + city + ", aId=" + aId + ", state=" + state + "]";
+	}
+	
+
+}

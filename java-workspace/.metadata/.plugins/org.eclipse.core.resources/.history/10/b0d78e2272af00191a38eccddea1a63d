@@ -1,0 +1,63 @@
+<html>
+
+<head>
+
+<h1>Welcome</h1>
+
+</head>
+
+<body bgcolor = "beige" align = "center">
+
+  <font face = "apercu" color = "teal">Fill in your details</font></br></br>
+
+  Take me to the <a href = "Login1.html">login page</a>
+
+  <form action = "Welcome" align = "center">
+
+    <table bgcolor = "burlywood">
+
+  <tr><td align = "right">CustomerId: </td>
+
+    <td>&nbsp;<input type = "text" id="Customer Id" name= "CustomerId"></td></tr></br>
+
+  <tr><td align = "right">CustomerName:</td>
+
+    <td>&nbsp;<input type = "text" id = "CustomerName" name = "CustomerName"></td></tr></br>
+
+  <tr><td align = "right">Bill amount: </td>
+
+    <td>&nbsp;<input type = "text" id = "bill amount" name = "bill amount"></td></tr>
+
+  <tr><td align = "right">Customer Address:</td>
+
+    <td>&nbsp;<textarea rows = "3" cols="16"></textarea></td></tr>
+
+  <tr><td align = "right">City:</td>&nbsp;<td><select>
+
+    <option></option>
+
+    <option value = "Bangalore">Bangalore</option>
+
+    <option value = "Mumbai">Mumbai</option>
+
+    <option value = "Chennai">Chennai</option>
+
+    <option value = "New Delhi">New Delhi</option>
+
+  </select>
+
+  <tr><td align = "right">Gender:</td><td><input type = "radio" value = "male" name = "male">Male
+
+    <input type = "radio" value = "female" name = "male">female
+
+    <input type = "radio" value = "others" name = "male">Others</td></tr></br>
+
+    <tr><td></td><td><input type = "submit" id = "submit" name = "submit">
+
+    <input type = "reset" id = "reset" name = "reset"></td></tr></br>
+
+</form>
+
+</body>
+
+</html>

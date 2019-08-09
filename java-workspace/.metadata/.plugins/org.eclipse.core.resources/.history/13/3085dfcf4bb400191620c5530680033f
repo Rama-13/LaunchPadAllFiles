@@ -1,0 +1,20 @@
+package com.deloitte.cms.controller;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+import com.deloitte.cms.dao.CustomerDAO;
+import com.deloitte.cms.model.Customer;
+
+public class CustomerController {
+	@RequestMapping("/addcustomer")
+	public ModelAndView addcustomer(Customer customer)
+{
+		CustomerDAO customerDAO = new CustomerDAOImpl();
+		
+		return new ModelAndView("success");
+		
+		
+		}
+	
+}

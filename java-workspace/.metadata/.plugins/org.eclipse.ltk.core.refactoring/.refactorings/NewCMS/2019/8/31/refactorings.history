@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 5 packages to &apos;SpringMVCDemo/src&apos;&#x0D;&#x0A;- Original project: &apos;NewCMS&apos;&#x0D;&#x0A;- Destination element: &apos;SpringMVCDemo/src&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     NewCMS/src/com.deloitte.client&#x0D;&#x0A;     NewCMS/src/com.deloitte.cms.dao.impl&#x0D;&#x0A;     NewCMS/src/com.deloitte.cms.dao&#x0D;&#x0A;     NewCMS/src/com.deloitte.utility&#x0D;&#x0A;     NewCMS/src/com.deloitte.cms.model" description="Copy packages" destination="=SpringMVCDemo/src" element1="/src&lt;com.deloitte.client" element2="/src&lt;com.deloitte.cms.dao.impl" element3="/src&lt;com.deloitte.cms.dao" element4="/src&lt;com.deloitte.utility" element5="/src&lt;com.deloitte.cms.model" flags="589830" fragments="5" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1564657157491" version="1.0"/>
+</session>

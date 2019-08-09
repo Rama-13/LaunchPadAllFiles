@@ -1,0 +1,40 @@
+package com;
+
+import java.io.IOException;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+/**
+ * Servlet implementation class FirstServlet
+ */
+public class FirstServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public FirstServlet() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		HttpSession session = request.getSession();
+		Session.setAttribute("productName",productName);
+		String productName = request.getParameter("productName");
+		if(productName == "shoes")
+		{
+			response.getWriter().println("Your bill is Rs.20/-");
+		}
+		RequestDispatcher rd = request.getRequestDispatcher("products.html");
+		
+		
+	}
+
+}

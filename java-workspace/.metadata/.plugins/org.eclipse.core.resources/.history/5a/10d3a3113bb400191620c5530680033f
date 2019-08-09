@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Spring MVC</title>
+</head>
+<body>
+<h1>My Home Page : KodandaRama</h1>
+<a href = "Hello.html">Hello</a>
+<a href = "Hello.do">Hello do</a>
+</body>
+</html>

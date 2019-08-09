@@ -1,0 +1,185 @@
+Create table Employee
+(
+empId integer, empName varchar(20), empAddress varchar(20), salary integer
+)
+insert into employee values(1, 'Erlich','Bachmanity', 60);
+insert into employee values(9, 'Dinesh','Piper chat', 6500);
+insert into employee values(13, 'Richard','Piedpiper', 656500);
+insert into employee values(26, 'Rama','bangalore', 6500);
+insert into employee values(54, 'Jian Yaang!','Piedpiper', 8500);
+insert into employee values(84, 'Gavin Belson','Hooli', null);
+insert into employee (empId, empName) values (84, 'Russ Hannerman');
+update employee set empAddress = 'Hooli' where empName = 'Gavin Belson'
+update employee set empid = 85 where empName = 'Russ Hannerman'
+
+select * from employee where Salary > 8000 and empId < 150
+select * from employee where Salary is not null order by salary desc
+SELECT * from Employee
+SELECT empName, salary from employee where empName = 'Erlich'
+SELECT distinct (empAddress) from Employee
+SELECT salary, salary*1.1 as Updatedsalary from employee where salary is not null
+SELECT * from employee where EmpAddress in ('Piedpiper', 'bangalore')
+SELECT * from employee where empName like 'R%' and empAddress = 'bangalore'
+describe Employee
+desc dual
+select sysdate from dual
+select upper (empName) from employee
+CONCAT
+SUBSTR ('Jian Yaang', 1,5)
+LENGTH('Jian Yaang')
+INSTR('Jian Yaang','W')
+Select LPAD(empName, 60, 'LOL') as LOL from Employee
+Select RPAD(empName, 60, 'LOL') as LOL from Employee
+SELECT LTRIM('  JianYaang') AS LeftTrimmedString from Employee
+SELECT LTRIM(empName) AS LeftTrimmedString from Employee
+SELECT TRIM('J', 'Jian Yaang') AS Cut! from Employee
+SELECT CONCAT (empName, empAddress) AS Concatted from Employee where empAddress is not null
+select length (empName) from employee where empAddress = 'bangalore'
+select length ('Salman') from dual
+select upper(empName) from dual
+select upper(empName), empAddress from employee where empAddress = 'bangalore'
+select empName,nvl(salary, 0) from employee
+select empName,nvl2(salary,'Officially an adult', 'Good days are coming :)') from employee
+select empName, nullif(salary,60) from employee
+update employee set empaddress = null where empName = 'Russ Hannerman'
+select
+select Count(*) from employee where salary is not null 
+Select empAddress, sum(Salary) from employee group by empAddress
+
+
+
+create table emp
+(
+empId integer,
+empName varchar(20),
+doj date
+)
+drop table emp
+insert into emp values (84, 'Russ Hannerman','06/07/2015', '06/07/1998')
+alter table emp add dob date
+select delete from emp where dob is null
+insert into emp values(95, 'Richard', '05/04/2016',to_date('2007-04-01 11:09:21','yyyy-mm-dd hh:mi:ss'));
+select * from emp
+select empName,nvl(dob,'00/00/0000') from emp
+
+Create table Employeh
+
+(
+empId integer CONSTRAINT DumboIt'sAPrimarKey primary key, empName varchar(20) not null, empAddress varchar(20) check (empAddress in ('hyderabad', 'bangalore')), salary integer check (salary between 1000 and 2000), mobilenumber char(10)
+)
+select * from employeh
+insert into Employeh values (100,'rama', 'bangalore',2300, 898545621)
+insert into Employeh values (1001,'rama', 'bangalore',3300, 898545621)
+insert into Employeh values (1006,'rama', 'bangalore',3300, 898545621)
+insert into Employeh values (100,'rama', 'bangalore',4300, 898545621)
+
+
+Create table Employez
+(
+empId varchar(5) CONSTRAINT Dumbo primary key, empName varchar(20) CONSTRAINT can'tBeNull not null, empAddress varchar(20) check (empAddress in ('hyderabad', 'bangalore')), salary integer check (salary between 1000 and 2000), mobilenumber char(10)
+)
+insert into Employez values (1005,'rama','bangalore',2300, 898545621)
+insert into Employez values (1001,'rama', 'bangalore',3300, 898545621)
+select * from Employez
+
+
+
+create table employee1(
+EmpID integer CONSTRAINT itIsPrimaryKey primary Key,
+EmpName varchar(20) CONSTRAINT itCnnotBeNull not null,
+EmpAddress varchar(20) CONSTRAINT getelocated check(EmpAddress in ('NewYork', 'London','Paris')),
+Salary integer CONSTRAINT TooBadOrTooGood check(Salary between 20000 and 30000),
+CompanyAddress varchar(20) default 'ASV Suntech Park'
+)
+
+#Foriegn key example
+create table emp2
+(
+    emp_no integer primary key,
+    empname varchar2(20) not null,
+    salary integer,
+    designation varchar2(20),
+    dept_no integer
+)
+
+create table dept
+(
+    dept_no integer primary key,
+    dept_name varchar2(20),
+    location varchar2(20) not null
+);
+insert into dept values(118,'HR','Pune');
+ 
+alter table emp add constraint fkdept foreign key(dept_no) references dept(dept_no);
+ 
+select * from emp2;
+select * from dept;
+ 
+insert into emp2 values(90,'Pooja',98000,'Manager',118);
+insert into emp2 values(92,'Gavin',98000,'Manager',115);
+
+
+
+
+CREATE TABLE SECTION (
+SECTION_ID INTEGER CONSTRAINT S_ID CHECK (SECTION_ID > 0),
+SECTION_NAME CHAR(30) CONSTRAINT S_NAME NOT NULL,
+BOOK_COUNT INTEGER,
+CONSTRAINT SECT_PRIME PRIMARY KEY (SECTION_ID))
+
+
+
+CREATE TABLE BOOK
+(
+ISBN INTEGER CONSTRAINT B_ISBN CHECK (ISBN BETWEEN 1 AND 2000),
+TITLE VARCHAR2(200) CONSTRAINT B_TITLE NOT NULL,
+AUTHOR VARCHAR2(50) CONSTRAINT B_AUTH NOT NULL,
+LENT_DATE DATE,
+RETURNED_DATE DATE,
+TIMES_LENT NUMBER(6),
+SECTION_ID NUMBER(3),
+CONSTRAINT BOOK_PRIME PRIMARY KEY (ISBN),
+CONSTRAINT BOOK_SECT FOREIGN KEY (SECTION_ID) REFERENCES SECTION(SECTION_ID)
+ON DELETE CASCADE)
+
+select * from book
+
+
+insert into book values (1500,'Demons','Dostoevsky','06/07/2015','07/06/2015',5,6)
+
+
+
+
+create table Suppliers
+(
+   supplier_id varchar(20),
+   supplier_name varchar(20)
+)
+/
+
+create table Orders
+(
+  order_id varchar(20),
+  supplier_id varchar(20),
+  order_date date
+)
+/
+
+insert into Suppliers values('10000','IBM')
+insert into Suppliers values('10001','Hewlett Packard')
+insert into Suppliers values('10002','Microsoft')
+insert into Suppliers values('10003','TCS')
+
+insert into Orders values('1','10000',to_date('3/3/09','mm/dd/yy'))
+insert into Orders values('2','10000',to_date('7/5/10','mm/dd/yy'))
+insert into Orders values('3','10001',to_date('12/8/10','mm/dd/yy'))
+
+select * from Suppliers
+select * from orders
+
+select o.order_id, s.supplier_id, o.order_date, s.supplier_name from Suppliers s join orders o on s.supplier_id = o.supplier_id 
+
+select o.order_id, s.supplier_id, o.order_date, s.supplier_name from Suppliers s left join orders o on s.supplier_id = o.supplier_id 
+select o.order_id, s.supplier_id, o.order_date, s.supplier_name from Suppliers s right join orders o on s.supplier_id = o.supplier_id 
+select o.order_id, s.supplier_id, o.order_date, s.supplier_name from Suppliers s full join orders o on s.supplier_id = o.supplier_id 
+

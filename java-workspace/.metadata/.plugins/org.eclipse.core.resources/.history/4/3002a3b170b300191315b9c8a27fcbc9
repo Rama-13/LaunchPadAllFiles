@@ -1,0 +1,12 @@
+package com.deloitte.cms.model;
+
+import java.util.Set;
+
+public class EmployeeDetails {
+	
+	private int employeeId;
+	private String employeeName;
+	private int employeeSalary;
+	private Set employeeAddress;
+
+}

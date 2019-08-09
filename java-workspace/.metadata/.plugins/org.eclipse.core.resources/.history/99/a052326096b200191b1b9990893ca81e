@@ -1,0 +1,20 @@
+package com.customTag;
+
+import javax.servlet.jsp.tagext.TagSupport;
+
+public class CustomTagAddress extends TagSupport {
+	
+	
+	@Override
+	public int doStartTag()
+	{
+		JspWriter out = pageContext.getOut();
+		out.println("<h2>Address of me</h2>");
+		out.println("<h2>Spice Garden</h2>");
+		out.println("<h2>Near Marathahalli Bridge</h2>");
+		out.println("<h2>Bangalore</h2>");
+		
+		
+	}
+
+}

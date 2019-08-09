@@ -1,0 +1,14 @@
+package com.deloitte.cms.model;
+
+import javax.annotation.Resource;
+
+import org.springframework.core.io.ClassPathResource;
+
+public class SpringClient {
+	public static void main(String[] args) {
+		
+		Resource resource = new ClassPathResource("beans.xml");
+		
+	}
+
+}

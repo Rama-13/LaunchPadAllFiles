@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+Each product costs 10/-
+<form action = "FirstServlet" method = "post">
+ProductName:
+<input type = "checkbox" name = "shirts">
+<input type = "checkbox" name = "shoes">
+<input type = "checkbox" name = "socks">
+<input type = "checkbox" name = "Belts">
+<input type = "submit" name = "submit">
+
+
+  
+</form>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form>
+<table>
+ <tr><td align = "right">CustomerId: </td>
+
+    <td>&nbsp;<input type = "text" id="CustomerId" name= "CustomerId"></td></tr></br>
+
+  <tr><td align = "right">CustomerName:</td>
+
+    <td>&nbsp;<input type = "text" id = "CustomerName" name = "CustomerName"></td></tr></br>
+
+  <tr><td align = "right">Bill amount: </td>
+
+    <td>&nbsp;<input type = "text" id = "bill amount" name = "billAmount"></td></tr>
+
+  <tr><td align = "right">Customer Address:</td>
+
+    <td>&nbsp;<textarea rows = "3" cols="16" name = "CustomerAddress"></textarea></td></tr>
+
+  <tr><td align = "right">City:</td>&nbsp;<td><select>
+</table>
+</form>
+</body>
+</html>

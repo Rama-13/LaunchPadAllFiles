@@ -1,0 +1,16 @@
+package com.dao.impl;
+
+import com.dao.EmpDAO;
+import com.model.Employee;
+
+public class EmpDAOimpl implements EmpDAO {
+	private static final String INSERT_CUSTOMER_QUERY = "insert into hr.Employee values(?,?,?,?,?)";
+
+
+	@Override
+	public boolean insertCustomer(Employee employee) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

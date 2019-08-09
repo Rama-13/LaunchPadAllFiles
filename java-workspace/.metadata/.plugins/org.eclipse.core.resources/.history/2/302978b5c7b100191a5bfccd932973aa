@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form>
+ <tr><td align = "right">CustomerName:</td>
+
+<input type = "text" id = "ProductName" name = "ProductName">
+
+  
+</form>
+</body>
+</html>

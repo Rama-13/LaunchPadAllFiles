@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Spring MVC</title>
+</head>
+<body>
+<h1>My Home Page : KodandaRama</h1>
+<a href = "Hello.html">Hello</a><br>
+<a href = "addcustomer.do">Add customers</a>
+<a href = "updatecustomers.do">update customers</a>
+<a href = "deletecustomers.do">delete customers</a>
+<a href = "findByIdcustomers.do">findCustomerById</a>
+<a href = "findAllcustomers.do">findAllCustomers</a>
+
+</body>
+</html>

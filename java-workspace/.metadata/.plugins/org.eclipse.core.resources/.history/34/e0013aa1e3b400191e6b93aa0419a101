@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Spring MVC</title>
+</head>
+<body>
+<h1>My Home Page : KodandaRama</h1>
+Hello there! It's been a long day. Select a choice without making much fuss <br>
+<a href = "addcustomer.html">Add customers</a><br>
+<a href = "updatecustomer.html">update customers</a><br>
+<a href = "deletecustomer.html">delete customers</a><br>
+<a href = "findByIdcustomers.do">findCustomerById</a><br>
+<a href = "findAllcustomers.do">findAllCustomers</a><br>
+<a href = "SearchCustomerById.jsp">searchCustomerById</a>
+<a href = "leave.do">Leave in ?</a><br>
+
+
+</body>
+</html>

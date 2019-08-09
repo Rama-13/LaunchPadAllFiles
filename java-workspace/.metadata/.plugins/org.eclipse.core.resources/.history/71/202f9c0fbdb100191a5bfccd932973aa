@@ -1,0 +1,10 @@
+<html>
+    <h1 align = "center">Welcome to my CMS</h1>
+    If you are an existing customer<a href = "Login1.html">Login here</a></br>
+    To create a new account<a href = "CustomerDetails.html">Signup here</a>
+    <form action = "HelloServlet"> 
+    
+    GuestName:<input type ="text" name = "guestName" id ="guestName">
+    <input type = "submit" name = "sign in">
+    </form>
+</html>

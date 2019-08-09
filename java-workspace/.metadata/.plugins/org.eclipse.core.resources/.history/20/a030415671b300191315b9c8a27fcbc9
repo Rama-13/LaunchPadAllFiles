@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+	<class name="com.deloitte.cms.model.EmployeeDetails" table="hr.EmployeeTypes" >
+	
+		<id name="EmployeeId" type="int" column="EID">
+			<generator class="assigned"/>
+		</id>
+        
+		<property name="employeeName" column="CustName"/>
+		<property name="employeeSalary" column="employeeSalary"/>
+		<property name="billAmo" />
+		<subclass name = "com.deloitte.cms.model.PremiumCustomer" extends = "com.deloitte.cms.model.Customer" discriminator-value = "PremiumCustomer">
+		<property name = "rewardPoints"></property>
+	
+        </subclass>
+	</class>
+</hibernate-mapping>

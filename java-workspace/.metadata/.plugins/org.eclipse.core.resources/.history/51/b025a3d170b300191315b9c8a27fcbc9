@@ -1,0 +1,5 @@
+package com.deloitte.cms.model;
+
+public class Address {
+
+}

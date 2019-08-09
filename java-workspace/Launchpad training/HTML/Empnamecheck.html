@@ -1,0 +1,27 @@
+<html>
+<script> 
+function initialIsCapital( word ){
+  return word[0] !== word[0].toLowerCase();
+} 
+        function validatename()  
+        {  
+                var x=document.myform.username.value;  
+                var atposition=x.indexOf("@");  
+                var dotposition=x.lastIndexOf(".");  
+                if (initialIsCapital(x))
+                        {  
+                            alert("Please enter a valid e-mail address \n atpostion:"+atposition+"\n dotposition:"+dotposition);  
+                            return false;  
+                        } 
+        }  
+        </script>  
+        <body onload="validateemail()">  
+        <form 
+                name="myform"  
+                action="thanks.html" 
+                onsubmit="return validatename();">  
+        Username: <input type="text" name="username" ><br/>  
+          
+        <input type="submit" value="register">  
+        </form>
+    </html>

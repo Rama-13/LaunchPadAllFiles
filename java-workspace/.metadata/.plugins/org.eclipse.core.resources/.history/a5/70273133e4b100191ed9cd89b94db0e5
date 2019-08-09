@@ -1,0 +1,14 @@
+package com.model;
+
+import java.sql.Date;
+
+public class Employee {
+	
+	private String Fname;
+	private String Lastname;
+	private String Empid;
+	private Date Dob;
+	private String Address;
+	
+
+}

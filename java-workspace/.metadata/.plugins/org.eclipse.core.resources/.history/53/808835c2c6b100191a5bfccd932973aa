@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Product Project</title>
+</head>
+<body>
+<form action = "products.html">
+CustomerName: <input type = "text" name = "customerName">
+<input type = "submit" name = "Login">
+<input type = "text" id = "password" name = "password">
+</form>
+
+</body>
+</html>

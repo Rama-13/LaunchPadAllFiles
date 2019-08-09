@@ -1,0 +1,49 @@
+<html>
+
+<body>
+
+<script>
+
+    function validate()
+
+    {
+
+var userna = document.getElementById("username").value;
+
+var passworda = document.getElementById("password").value;
+var ErrorUsername = document.getElementById("Errorusername").value;
+
+if (userna == "kodandarama" && passworda == "kodandarama")
+
+{
+    alert("You are logged in :" +userna);
+}
+
+else {
+
+alert("Invalid credentials");
+
+}
+}
+
+</script>
+
+<h1 align = "center"> Login</h1>
+
+<body bgcolor = "#CF7F5E" text = "black">
+
+<form action = "https://www.google.com" align = "center">
+
+<table> <tr><td>Username</td>
+
+<td><input type = "text" id = "username" name = "Username" value = "kodandarama" ></td></tr><br>
+<span id = "ErrorUsername"></span></table><br>
+<tr><td></td><td>Password</td>
+
+<td><input type = "password" id = "password" name = "password" value = "kodandarama" ></td></tr><br><br>
+
+<tr><td></td><td><input type = "submit" value ="Sign in" onclick = "validate();"></td></tr>
+
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+package com.dao.impl;
+
+import java.io.IOException;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
+import com.dao.EmpDAO;
+import com.model.Employee;
+import com.util.DbUtility;
+
+public class EmpDAOimpl implements EmpDAO {
+	private static final String INSERT_EMPLOYEE_QUERY = "insert into hr.Employee values(?,?,?,?,?)";
+
+
+	@Override
+	public boolean insertEmployee(Employee employee) {
+		int noofrecords = 0;
+		try {
+			Connection connection = DbUtility.getMyConnection();
+			PreparedStatement statement = connection.prepareStatement(INSERT_EMPLOYEE_QUERY);
+			statement.setString(1, employee.getFname());
+			statement.setString(2, employee.getLastname());
+			statement.setString(3, employee.getEmpid());
+			statement.setInt(4, employee.getDob());
+			noofrecords = statement.executeUpdate();
+			System.out.println("Inserted "+noofrecords+" Succesfully");
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		// TODO Auto-generated method stub
+		if (noofrecords == 0)
+			return false;
+		else
+			return true;
+	}
+
+}

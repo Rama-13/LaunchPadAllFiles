@@ -1,0 +1,48 @@
+package com.deloitte;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+@Controller
+public class MyMVCController {
+@RequestMapping("/hello")
+public String kkr()
+{
+return"rama";
+}
+@RequestMapping("/addcustomers")
+public String addcustomer()
+{
+	
+return "addcustomer";
+
+}
+@RequestMapping("/updatecustomers")
+public String updatecustomer()
+{
+	
+return "updatecustomer";
+
+}
+@RequestMapping("/deletecustomers")
+public String deletecustomer()
+{
+	
+return "deletecustomer";
+
+}
+@RequestMapping("/findcustomer")
+public String findcustomer()
+{
+	
+return "findCustomerById";
+
+}
+@RequestMapping("/allcustomer")
+public String allcustomer()
+{
+	
+return "findAllCustomer";
+
+}
+	
+}

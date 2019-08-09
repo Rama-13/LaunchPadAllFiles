@@ -1,0 +1,28 @@
+package com.client;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.Scanner;
+
+public class EmployeeClient {
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Enter the First Name");
+		String Fname = scanner.nextLine();
+		System.out.println("Enter the last name");
+		String Lastname = scanner.next();
+		System.out.println("Enter Employee Address");
+		InputStreamReader isr=new InputStreamReader(System.in);
+		BufferedReader br= new BufferedReader(isr);
+		try {
+			String customerAddress= br.readLine();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		Fname.substring(0,2);
+		
+	}
+
+}

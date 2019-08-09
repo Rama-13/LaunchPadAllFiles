@@ -1,0 +1,15 @@
+package com.oracle.springtraining.coupling1;
+
+public class PaymentService {
+
+	private SavingsAccount savingsAccount;
+
+	public PaymentService(String accNumber) {
+		savingsAccount = new SavingsAccount(accNumber); //In this way, You need to create objects for all types of accounts you have.
+
+	}
+	public void pay(){
+
+		System.out.println("Payment using tight coupling ->"+ this.savingsAccount.getDetails());
+	}
+}

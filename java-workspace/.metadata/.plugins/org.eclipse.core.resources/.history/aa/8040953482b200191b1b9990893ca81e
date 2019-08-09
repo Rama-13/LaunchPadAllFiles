@@ -1,0 +1,26 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>New JSP</title>
+</head>
+<body>
+<%!String username;
+int num1;%>
+Welcome
+<%
+/* username = request.getParameter("username");
+           if(username == "jay"){
+        	   out.print("Welcome Username");}
+           else
+           {
+        	   response.sendRedirect("index.html");} */
+         num1 = Integer.parseInt(request.getParamater("num1"));  
+        	 
+           
+          
+           %>
+</body>
+</html>

@@ -1,0 +1,42 @@
+select * from stu1
+select * from fees1
+select s.name, a.amount from stu1 s, fees1 a where s.roll = a.roll
+select roll from fees1 where amount = 9800
+select name from stu1 where roll = 1
+select name, roll from stu1 where roll = (select roll from fees1 where amount = 9800)
+
+ create table Stu1
+ (
+   Roll number(20),
+   Name varchar(20)
+ );
+
+
+
+
+
+create table Marks
+ (
+   Roll number(20),
+   Marks integer
+ );
+select * from marks
+
+insert into Marks values(1010, 80);
+insert into Marks values(1011,92);
+insert into Marks values(1012,75);
+insert into Marks values(1013,72);
+
+select * from stu1
+update stu1 set name = 'Rama' where roll = 1011
+update stu1 set roll = '1012' where name = 'Dan'
+update stu1 set roll = '1010' where name = 'Sai'
+update stu1 set roll = '1013' where name = 'Rakesh'
+
+
+select roll, marks as highestmarks from marks where marks >= all(select marks from marks) 
+select m.roll, m.marks, s.name from stu1 s,marks m where s.roll = m.roll
+
+update marks set marks = (select avg(marks) from marks)  where marks < (select avg(marks) from marks)  
+
+truncate table marks

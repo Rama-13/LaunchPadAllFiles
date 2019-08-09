@@ -1,0 +1,5 @@
+package com.deloitte.cms.config;
+
+public class AppConfiguration {
+
+}

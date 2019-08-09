@@ -1,0 +1,33 @@
+class Code10 {
+	int f1(int num)
+	{
+		return num*num;
+	}
+}
+class code11 extends Code10
+{
+	String f2(int num)
+	{
+		return "abc";
+	}
+}
+
+public static void main(String[] args) {
+
+int i1=1;
+
+switch(i1){
+
+case 1:
+
+System.out.println("one");
+
+case 2:
+
+System.out.println("two");
+
+case 3:
+
+System.out.println("three");
+
+}}}

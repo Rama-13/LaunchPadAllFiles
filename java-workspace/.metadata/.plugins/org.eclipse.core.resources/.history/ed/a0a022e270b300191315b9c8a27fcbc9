@@ -1,0 +1,8 @@
+package com.deloitte.cms.model;
+
+public class Address {
+	private int add;
+	private String city;
+	private String state;
+
+}

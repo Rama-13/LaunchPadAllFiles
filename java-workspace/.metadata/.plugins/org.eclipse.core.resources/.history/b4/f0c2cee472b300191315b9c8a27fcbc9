@@ -1,0 +1,31 @@
+package com.deloitte.cms.client;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+
+
+
+import org.hibernate.Transaction;
+
+public class CustomerClient {
+
+
+	public static void main(String[] args) {
+
+		//looks for hibernate.cfg.xml and creates db connection
+		Configuration configuration = new Configuration().configure();
+
+		SessionFactory factory =  configuration.buildSessionFactory();
+		Session session = factory.openSession();
+		Transaction transaction = session.beginTransaction();
+		//PremiumCustomer customer = new PremiumCustomer(115,"Rama","Pune",4855);
+		Set s = new HashSet();
+		
+		transaction.commit();
+		session.close();
+		factory.close();
+
+
+	}
+}

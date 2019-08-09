@@ -1,0 +1,21 @@
+class Code12 {
+	int f1(int num)
+	{
+		return num*num;
+	}
+}
+class code11 extends Code12
+{
+	String f2(int num)
+	{
+		return "abc";
+	}
+}
+public class Code10{
+
+public static void main(String[] args) {
+	code11 code = new code11();
+
+System.out.println(code.f1(10));
+
+}}
