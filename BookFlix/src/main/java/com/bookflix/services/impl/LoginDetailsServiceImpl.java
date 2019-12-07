@@ -31,7 +31,7 @@ public class LoginDetailsServiceImpl implements LoginDetailsService {
 		else if(user1.getPassword().equals(login.getPassword()))
 		{
 		    httpSession.setAttribute("sessionStatus", "on");
-		    httpSession.setAttribute("userId", (Integer) user1.getUserId());
+		    httpSession.setAttribute("userId", user1.getUserId());
 			return true;
 			
 		}

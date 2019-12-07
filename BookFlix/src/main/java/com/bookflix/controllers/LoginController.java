@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.bookflix.models.Login;
-import com.bookflix.models.Users;
 import com.bookflix.services.LoginDetailsService;
 
 @Controller

@@ -1,9 +1,6 @@
 package com.bookflix.controllers;
 
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
-
 import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;

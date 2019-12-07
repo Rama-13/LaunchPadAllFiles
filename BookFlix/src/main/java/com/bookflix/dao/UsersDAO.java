@@ -1,13 +1,12 @@
 package com.bookflix.dao;
 
+import org.springframework.data.repository.CrudRepository;
+
 /*
  * author: anweshpatel
  * created: 07/08/2019
  * project: BookFlix
  */
-
-import org.springframework.data.repository.CrudRepository;
-import org.springframework.stereotype.Repository;
 
 import com.bookflix.models.Users;
 

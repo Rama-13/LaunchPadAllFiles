@@ -38,7 +38,7 @@ public class AddBookServiceImpl implements AddBookService {
 	public List<Book> allBooksByUser() {
 		Users user = userDao.findById((int) httpSession.getAttribute("userId")).get();
 		
-		return (List<Book>) bookDAO.findByOwnerId(user.getUserId());
+		return bookDAO.findByOwnerId(user.getUserId());
 	}
 
 }
