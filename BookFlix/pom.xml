@@ -18,8 +18,11 @@
 
 	<properties>
 		<java.version>1.8</java.version>
+		<docker.image.prefix>gct</docker.image.prefix>
+		<appengine.maven.plugin>2.2.0</appengine.maven.plugin>
+		
 	</properties>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
